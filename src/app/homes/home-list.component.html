@@ -37,14 +37,14 @@
                                     <td>
                                         <img *ngIf='showImage' [src]='home.imageUrl' [title]='home.homeAddress' [style.width.px]='imageWidth' [style.margin.px]='imageMargin' />
                                     </td>
-                                    <td style='font-size:20px'>
-                                        {{home.homeMLS}}
+                                    <td style='font-size:15px'>
+                                        {{home.homeMLS | lowercase | convertToSpaces: '-' }}
                                     </td>
-                                    <td style='font-size:20px'>{{home.homePrice | currency:'USD':true:'1.2-2'}}</td>
-                                    <td style='font-size:20px'>{{home.homeAddress}}</td>
-                                    <td style='font-size:20px'>{{home.homeBed}}</td>
-                                    <td style='font-size:20px'>{{home.homeBath}}</td>
-
+                                    <td style='font-size:15x'>{{home.homePrice | currency:'USD':true:'1.2-2'}}</td>
+                                    <td style='font-size:15px'>{{home.homeAddress}}</td>
+                                    <td style='font-size:15px'>{{home.homeBed}}</td>
+                                    <td style='font-size:15px'>{{home.homeBath}}</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
